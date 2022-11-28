@@ -21,7 +21,7 @@
     width: 100%;
     padding: 30px;
     border-radius: 6px;
-    background: beige;
+    background: beige; 
 }
 .form.signup{
     opacity: 0;
@@ -142,3 +142,69 @@ form{
         padding: 15px 10px;
     }
 }
+html, body {
+    height: 100%;
+    width: 100%;
+  }
+  /* media quires */
+  
+  @media(max-width: 766px) {
+      .book-apple-image {
+          min-height: 300px;
+      }
+      .search-box {
+          width: 90%;
+          margin-left: 5%;
+      }
+      .movie-display-container {
+          margin-left: 10%;
+          width: 80%;
+      }
+  }
+  @media(max-width: 500px) {
+      .book-apple-image {
+          min-height: 200px;
+      }
+      .form-container {
+          background-color: #ba356d;
+          margin-left: 0;
+          width: 100%;
+      }
+      .search-box {
+          width: 100%;
+          margin-left: 0%;
+      }
+      .movie-display-container {
+          width: 100%;
+          margin-left: 0;
+      }
+  
+      .nav-toggle button:hover {
+          background: #45596c;
+      }
+  
+      .nav-toggle {
+          margin-top: 10px;
+          margin-left: 10px;
+      }
+  
+      .heading {
+          background-color: #45596c;
+          color: #f3f3f6;
+          min-height: 70px;
+      }
+  
+      .heading-title {
+          font-size: 28px;
+          margin-top: 10px;
+      }
+  }
+  @media(min-width: 992px) {
+   
+      .form-center {
+          padding-top: 30px;
+          min-height: 240px;
+          margin: 0 auto;
+          max-width: 50%;
+      }
+  }
