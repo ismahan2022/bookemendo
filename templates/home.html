@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="row">
+      <div class="col">
+        <div class="book-search-box search-box">
+          <div class="form-box">
+            <label for="book" class="text-center uppercase">Seach for books here</label>
+
+            <!-- Fetch book Information for book-app.js -->
+            <input type="text" class="form-control" id="book" oninput="fetchBookInformation() ">
+
+            <div id="loader">
+              <!-- Loader gif and messages displayed here -->
+            </div>
+                </form>
+              </div>
+            </div>
+           </nav>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row" id="book-data">
+      <!-- Book search information displayed here -->
+    </div>
+{% endblock %}

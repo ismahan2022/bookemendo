@@ -165,7 +165,7 @@ html, body {
       .book-apple-image {
           min-height: 200px;
       }
-      .form-container {
+      .form1-container {
           background-color: #ba356d;
           margin-left: 0;
           width: 100%;
@@ -180,7 +180,7 @@ html, body {
       }
   
       .nav-toggle button:hover {
-          background: #45596c;
+          background: #ba356d;
       }
   
       .nav-toggle {
@@ -189,7 +189,7 @@ html, body {
       }
   
       .heading {
-          background-color: #45596c;
+          background-color: #ba356d;
           color: #f3f3f6;
           min-height: 70px;
       }
