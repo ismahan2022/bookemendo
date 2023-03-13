@@ -2,7 +2,7 @@ from flask import Flask, request, redirect, render_template
 import psycopg2 
 
 app = Flask(__name__) 
-# conn = psycopg2.connect( host="localhost", database="mydatabase", user="postgres", password="secretpassword" ) 
+conn = psycopg2.connect( host="localhost", database="mydatabase", user="postgres", password="mysecretpassword" ) 
 
 @app.route('/') 
 def home(): 
@@ -32,12 +32,12 @@ def signup():
 
         
         cursor = conn.cursor() 
-        cursor.execute(f"SELECT * FROM users WHERE username='{username}' AND password='{password}'") 
+        cursor.execute(f"' INSERT INTO users (username, password) VALUES ('user1', 'pass1');'") 
         user = cursor.fetchone() 
         if user: 
             return redirect('/login') 
         else: 
-            return render_template('signup.html', message="Login Failed")
+            return render_template('signup.html', message="SignUp Failed")
     return render_template('signup.html')
 @app.route('/welcome')
 def welcome():
